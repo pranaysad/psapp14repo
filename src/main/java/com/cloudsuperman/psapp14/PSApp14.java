@@ -45,7 +45,8 @@ public class PSApp14 {
 		
 		//String strURL = "http://ip-api.com/json/" + strRemoteHost;
 		
-		String strURL = "http://ip-api.com/json/71.231.182.224";
+		//String strURL = "http://ip-api.com/json/71.231.182.224";
+		String strURL = "http://ip-api.com/json/162.17.188.83";
 		
 		URL url = null;
 		
