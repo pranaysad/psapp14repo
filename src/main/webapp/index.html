@@ -15,8 +15,15 @@
     	
     	function getdetails() {
     	    			
-    		var url = "http://localhost:8080/psapp14/rest/resource/IPAddress";
-    		xmlhttp.open('GET',url,true);
+    		//var url = "http://localhost:8080/psapp14/rest/resource/IPAddress";
+    		
+    		var homeURL = document.URL;
+    		
+    		alert(homeURL);
+    		
+    		var wsURL = homeURL + "/rest/resource/IPAddress"; 
+    		
+    		xmlhttp.open('GET',wsURL,true);
     		xmlhttp.send(null);
     		
     		xmlhttp.onreadystatechange = function () {

@@ -26,6 +26,10 @@ import java.io.BufferedReader;
 @Path("/resource")
 public class PSApp14 {
 	
+	//Need POST function which 
+	
+	//	This GET functionality needs to be called from the javascript Init function 
+	//	so that the Zipcode is shown as soon as the page loads 
 	@GET
 	@Path("/IPAddress")
 	@Produces(MediaType.TEXT_PLAIN)
@@ -43,10 +47,10 @@ public class PSApp14 {
 		
 		//String strURL = "http://extreme-ip-lookup.com/json/" + strRemoteHost;
 		
-		//String strURL = "http://ip-api.com/json/" + strRemoteHost;
+		String strURL = "http://ip-api.com/json/" + strIPAddress;
 		
 		//String strURL = "http://ip-api.com/json/71.231.182.224";
-		String strURL = "http://ip-api.com/json/162.17.188.83";
+		//String strURL = "http://ip-api.com/json/162.17.188.83";
 		
 		URL url = null;
 		
